@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #estimate-content, #estimate-content * {
+    visibility: visible;
+  }
+  #estimate-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    background: white;
+  }
+  button, input, textarea {
+    display: none !important;
+  }
+}
